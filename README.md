@@ -37,10 +37,10 @@ VLAN & IP Addressing
 I divided the network into four VLANs to separate devices based on their purpose.
 
 VLAN	Name	Network	Gateway
-- **10	Main-Network	192.168.10.0/24	192.168.10.1
-- **20	Guest-Network	192.168.20.0/24	192.168.20.1
-- **30	IoT-Network	192.168.30.0/24	192.168.30.1
-- **99	Management	192.168.99.0/24	192.168.99.1
+- 10	Main-Network	192.168.10.0/24	192.168.10.1
+- 20	Guest-Network	192.168.20.0/24	192.168.20.1
+- 30	IoT-Network	192.168.30.0/24	192.168.30.1
+- 99	Management	192.168.99.0/24	192.168.99.1
 
 The TP-Link ER605 serves as the default gateway for each subnet and handles routing and firewall policies between VLANs.
 
@@ -52,11 +52,11 @@ The Cisco 2504 WLC centrally manages the wireless network and the four Cisco Air
 
 Each wireless network is mapped to its designated VLAN:
 
-- **SSID	VLAN	Purpose
-- **Elam-Main	VLAN 10	Trusted devices
-- **Elam-Guest	VLAN 20	Guest devices
-- **IOT-Network	VLAN 30	IoT devices
-- **Management	VLAN 99	Management network
+SSID	VLAN	Purpose
+- Elam-Main	VLAN 10	Trusted devices
+- Elam-Guest	VLAN 20	Guest devices
+- IOT-Network	VLAN 30	IoT devices
+- Management	VLAN 99	Management network
 
 This design allows wireless devices to be separated into different network segments based on the SSID they connect to.
 
