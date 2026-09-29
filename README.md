@@ -52,8 +52,8 @@ The Cisco 2504 WLC centrally manages the wireless network and the four Cisco Air
 
 Each wireless network is mapped to its designated VLAN:
 
-SSID	VLAN	Purpose
-- Elam-Main	VLAN 10	Trusted devices
+  SSID	       VLAN	     Purpose
+- Elam-Main	    VLAN 10	Trusted devices
 - Elam-Guest	VLAN 20	Guest devices
 - IOT-Network	VLAN 30	IoT devices
 - Management	VLAN 99	Management network
